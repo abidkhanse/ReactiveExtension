@@ -1,6 +1,9 @@
 package combine
 
 import io.reactivex.Observable
+import io.reactivex.functions.BiFunction
+import io.reactivex.rxkotlin.Observables
+import io.reactivex.rxkotlin.zipWith
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import java.util.concurrent.TimeUnit
@@ -36,6 +39,7 @@ fun mergeArray () {
 
     println("-- Merge Array --")
     combine.subscribe{ println( it ) }
+
 }
 
 fun mergeInfiniteSources() {
@@ -52,6 +56,7 @@ fun mergeInfiniteSources() {
     combine.subscribe{ println( it ) }
 
     Sleep(5)
+
 }
 
 fun concat() {
@@ -71,7 +76,6 @@ fun concat() {
 
 fun concatInfiniteSources() {
 
-
     val source1 = Observable.interval(1, TimeUnit.SECONDS).take(3).map { " Source 1 : $it" }
 
     val source2 = Observable.interval(500, TimeUnit.MILLISECONDS).map { " Source 2 : $it" }
@@ -86,10 +90,69 @@ fun concatInfiniteSources() {
 }
 
 
+fun ambiguous(){
+
+    val source1 = Observable.interval(1, TimeUnit.SECONDS)
+        .map { " Source 1 : $it" }
+
+    val source2 = Observable.interval(500, TimeUnit.MILLISECONDS)
+        .map { " Source 2 : $it" }
+
+    val result = source1.ambWith(source2)
+
+    println("-- Ambiguous infinite source --")
+
+    result.subscribe{ println( it ) }
+
+    Sleep(5)
+}
+
+
+
+fun zip()
+{
+
+    val source1 = Observable.just("one","two","three","four","five")
+    val source2 = Observable.range(1,6)
+
+     Observable.zip (source1, source2, io.reactivex.functions.BiFunction
+        <String, Int, String> { s1, s2 -> "$s1 $s2" })
+        .subscribe { println ( " $it " ) }
+
+}
+
+
+fun zipp()
+{
+    val source1 = Observable.interval(1, TimeUnit.SECONDS).take(3).map { " Source 1 : $it" }
+
+    val source2 = Observable.interval(500, TimeUnit.MILLISECONDS).map { " Source 2 : "+ it * 500  }
+
+    source1.zipWith(source2) { s1, s2  -> "$s1 , $s2"}
+        .subscribe { println(" $it ")}
+
+    Sleep(5)
+
+}
+
+
+fun combineLatest()
+{
+
+    val source1 = Observable.interval(1, TimeUnit.SECONDS).take(3).map { " Source 1 : $it" }
+    val source2 = Observable.interval(500, TimeUnit.MILLISECONDS).map { " Source 2 : "+ it * 500  }
+
+    Observables
+        .combineLatest(source1, source2) { s1, s2 -> "$s1 - $s2" }
+        .subscribe { println(" $it ")}
+
+    Sleep(5)
+
+}
+
+
 fun main() {
-
-    concatInfiniteSources()
-
+    combineLatest()
 }
 
 
