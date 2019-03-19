@@ -113,7 +113,7 @@ fun startWith() {
 }
 
 
-fun defaultIfEmpty(){
+fun defaultIfEmpty() {
 
     val source = Observable.just("one","two","three","four","five")
 

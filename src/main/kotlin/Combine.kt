@@ -1,12 +1,14 @@
 package combine
 
 import io.reactivex.Observable
-import io.reactivex.functions.BiFunction
+import io.reactivex.observables.GroupedObservable
 import io.reactivex.rxkotlin.Observables
+import io.reactivex.rxkotlin.withLatestFrom
 import io.reactivex.rxkotlin.zipWith
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import java.util.concurrent.TimeUnit
+
 
 /* * * * * * * * * * * * * * * *
     Combine observables
@@ -42,6 +44,7 @@ fun mergeArray () {
 
 }
 
+
 fun mergeInfiniteSources() {
 
 
@@ -59,6 +62,7 @@ fun mergeInfiniteSources() {
 
 }
 
+
 fun concat() {
 
     val source1 = Observable.just(1,2,3)
@@ -72,6 +76,7 @@ fun concat() {
     println("-- Concat with --")
     source1.concatWith(source2).subscribe{ println( it ) }
 }
+
 
 
 fun concatInfiniteSources() {
@@ -88,6 +93,7 @@ fun concatInfiniteSources() {
 
     Sleep(5)
 }
+
 
 
 fun ambiguous(){
@@ -122,7 +128,7 @@ fun zip()
 }
 
 
-fun zipp()
+fun zipWith()
 {
     val source1 = Observable.interval(1, TimeUnit.SECONDS).take(3).map { " Source 1 : $it" }
 
@@ -138,23 +144,61 @@ fun zipp()
 
 fun combineLatest()
 {
+    println( "combineLatest " )
+    val source1 = Observable
+        .interval(1, TimeUnit.SECONDS)
+        .take(3).map { " Source 1 : $it" }
 
-    val source1 = Observable.interval(1, TimeUnit.SECONDS).take(3).map { " Source 1 : $it" }
-    val source2 = Observable.interval(500, TimeUnit.MILLISECONDS).map { " Source 2 : "+ it * 500  }
+    val source2 = Observable
+        .interval(500, TimeUnit.MILLISECONDS)
+        .map { " Source 2 : "+ it * 500  }
 
     Observables
-        .combineLatest(source1, source2) { s1, s2 -> "$s1 - $s2" }
-        .subscribe { println(" $it ")}
+        .combineLatest( source1, source2 ) { s1, s2 -> "$s1 - $s2" }
+        .subscribe { println(" $it ") }
+
+    Sleep(5)
+}
+
+
+fun combineWithLatestFrom(){
+
+    println( "combineWithLatestFrom " )
+
+    val source1 = Observable
+        .interval(1, TimeUnit.SECONDS)
+        .take(3).map { " Source 1 : $it" }
+
+    val source2 = Observable
+        .interval(500, TimeUnit.MILLISECONDS)
+        .map { " Source 2 : "+ it * 500  }
+
+    source1.withLatestFrom(source2) { s1, s2 -> "$s1 - $s2" }
+        .subscribe { println(" $it ") }
 
     Sleep(5)
 
 }
 
+fun grouping() {
 
-fun main() {
-    combineLatest()
+    val source = Observable.just("one","two","three","four","five")
+
+    val keyvalues : Observable < GroupedObservable<Int, String> > ? = source.groupBy { s -> s.length }
+
+    keyvalues?.flatMapSingle {
+            grp -> grp.reduce ("") { x, y ->  "$x , $y" }
+            .map { s -> "${grp.key}  : " + s } } ?.subscribe { println(it) }
+
+    //key_values?.flatMapSingle { group -> group.toList() } ?.subscribe { println( it ) }
+
 }
 
+fun main() {
+
+    grouping()
+
+}
 
 
 fun Sleep(seconds: Long)
@@ -164,8 +208,6 @@ fun Sleep(seconds: Long)
     }
 
 }
-
-
 
 
 

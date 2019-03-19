@@ -2,11 +2,14 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt" line="88" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/Create.kt" line="121" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be36efef-982f-4df6-aca1-3c208169c44a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Combine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Combine.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Create.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Create.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Transform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Transform.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -35,13 +38,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="58" />
-          <entry key="kt" value="8282" />
+          <entry key="kt" value="10233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="58" />
-          <entry key="Kotlin" value="8282" />
+          <entry key="Kotlin" value="10233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,16 +64,16 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5009099">
+    <splitter split-orientation="horizontal" split-proportion="0.54640585">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/Create.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="54" />
+                <state relative-caret-position="742">
+                  <caret line="197" column="11" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
                   <folding>
-                    <element signature="e#16#153#0" expanded="true" />
+                    <element signature="e#16#278#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -85,13 +88,13 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/Combine.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="487">
-                  <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+                <state relative-caret-position="4158">
+                  <caret line="189" column="26" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
                   <folding>
-                    <element signature="e#17#154#0" expanded="true" />
+                    <element signature="e#17#478#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -104,8 +107,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+                <state relative-caret-position="163">
+                  <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="108" />
                 </state>
               </provider>
             </entry>
@@ -404,11 +407,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/kotlin/Operator.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Create.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Filter.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Transform.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Combine.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Create.kt" />
       </list>
     </option>
   </component>
@@ -466,7 +469,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552511228797" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553031879653" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -492,7 +495,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.combine.CombineKt">
+  <component name="RunManager" selected="Kotlin.create.CreateKt">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -526,6 +529,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="combine.CombineKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="create.CreateKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="rxkotlin_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="create.CreateKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -570,9 +586,11 @@
       <item itemvalue="Kotlin.transform.TransformKt" />
       <item itemvalue="Kotlin.filter.FilterKt" />
       <item itemvalue="Kotlin.combine.CombineKt" />
+      <item itemvalue="Kotlin.create.CreateKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.create.CreateKt" />
         <item itemvalue="Kotlin.combine.CombineKt" />
         <item itemvalue="Kotlin.filter.FilterKt" />
         <item itemvalue="Kotlin.transform.TransformKt" />
@@ -595,19 +613,19 @@
       <workItem from="1552083425399" duration="147000" />
       <workItem from="1552083643618" duration="1131000" />
       <workItem from="1552130179954" duration="286000" />
-      <workItem from="1552130631362" duration="38387000" />
+      <workItem from="1552130631362" duration="50405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42535000" />
+    <option name="totallyTimeSpent" value="54553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12708499" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944136" visible="true" weight="0.12708499" />
+      <window_info id="Structure" order="1" sideWeight="0.5005587" side_tool="true" visible="true" weight="0.12708499" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -615,7 +633,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29398665" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3355605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -704,16 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Create.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="54" />
-          <folding>
-            <element signature="e#16#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.0/ba88ed6468f28df009c013256be77ad72d313965/rxjava-2.2.0-sources.jar!/io/reactivex/functions/BiFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -728,19 +736,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Combine.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+        <state relative-caret-position="4158">
+          <caret line="189" column="26" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
+          <folding>
+            <element signature="e#17#478#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Combine.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        <state relative-caret-position="163">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Create.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="197" column="11" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
           <folding>
-            <element signature="e#17#154#0" expanded="true" />
+            <element signature="e#16#278#0" expanded="true" />
           </folding>
         </state>
       </provider>
