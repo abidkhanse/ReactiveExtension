@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt" line="88" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/Create.kt" line="121" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt" line="91" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be36efef-982f-4df6-aca1-3c208169c44a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/rxkotlin_main.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Combine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Combine.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Create.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Create.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Filter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Filter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Transform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Transform.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,52 +39,49 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="58" />
-          <entry key="kt" value="10233" />
+          <entry key="kt" value="14925" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="58" />
-          <entry key="Kotlin" value="10233" />
+          <entry key="Kotlin" value="14925" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="1" />
-          <entry key="java" value="11" />
-          <entry key="kt" value="5" />
+          <entry key="gradle" value="4" />
+          <entry key="java" value="28" />
+          <entry key="kt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="11" />
-          <entry key="Kotlin" value="5" />
+          <entry key="Groovy" value="4" />
+          <entry key="JAVA" value="28" />
+          <entry key="Kotlin" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54640585">
+    <splitter split-orientation="horizontal" split-proportion="0.5050045">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/kotlin/Create.kt">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/Filter.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="742">
-                  <caret line="197" column="11" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#16#278#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="198">
+                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/kotlin/Filter.kt">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2354">
-                  <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+                <state relative-caret-position="-2404">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -91,11 +89,41 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/Combine.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4158">
-                  <caret line="189" column="26" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
+                <state relative-caret-position="419">
+                  <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
                   <folding>
-                    <element signature="e#17#478#0" expanded="true" />
+                    <element signature="e#17#406#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/ExtensionFunction.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="43">
+                  <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/HigherOrderFunction.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#1#89#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/generated/_Collections.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="298">
+                  <caret line="1573" column="9" selection-start-line="1573" selection-start-column="9" selection-end-line="1573" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -105,10 +133,13 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/Create.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="163">
-                  <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="108" />
+                <state relative-caret-position="264">
+                  <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#16#278#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -129,6 +160,7 @@
       <find>just</find>
       <find>:</find>
       <find>single</find>
+      <find>reduce</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -408,10 +440,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/kotlin/Operator.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Filter.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Transform.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Combine.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Filter.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Create.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Transform.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/ExtensionFunction.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/HigherOrderFunction.kt" />
       </list>
     </option>
   </component>
@@ -422,18 +456,50 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="rxkotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="rxkotlin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="rxkotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="rxkotlin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="rxkotlin_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="rxkotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="rxkotlin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="rxkotlin_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="kotlin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="rxkotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="rxkotlin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="rxkotlin_test" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="rxkotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="rxkotlin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -469,7 +535,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553031879653" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553545569917" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -508,14 +574,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="ExtensionFunctionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="rxkotlin_main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="CreateKt" />
+      <option name="MAIN_CLASS_NAME" value="ExtensionFunctionKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HigherOrderFunctionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="rxkotlin_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="HigherOrderFunctionKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -560,19 +639,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transform.TransformKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="rxkotlin_main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="transform.TransformKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
@@ -582,19 +648,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.CreateKt" />
-      <item itemvalue="Kotlin.transform.TransformKt" />
       <item itemvalue="Kotlin.filter.FilterKt" />
       <item itemvalue="Kotlin.combine.CombineKt" />
+      <item itemvalue="Kotlin.ExtensionFunctionKt" />
+      <item itemvalue="Kotlin.HigherOrderFunctionKt" />
       <item itemvalue="Kotlin.create.CreateKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.create.CreateKt" />
+        <item itemvalue="Kotlin.HigherOrderFunctionKt" />
+        <item itemvalue="Kotlin.ExtensionFunctionKt" />
         <item itemvalue="Kotlin.combine.CombineKt" />
         <item itemvalue="Kotlin.filter.FilterKt" />
-        <item itemvalue="Kotlin.transform.TransformKt" />
-        <item itemvalue="Kotlin.CreateKt" />
       </list>
     </recent_temporary>
   </component>
@@ -613,19 +679,19 @@
       <workItem from="1552083425399" duration="147000" />
       <workItem from="1552083643618" duration="1131000" />
       <workItem from="1552130179954" duration="286000" />
-      <workItem from="1552130631362" duration="50405000" />
+      <workItem from="1552130631362" duration="95983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54553000" />
+    <option name="totallyTimeSpent" value="100131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944136" visible="true" weight="0.12708499" />
-      <window_info id="Structure" order="1" sideWeight="0.5005587" side_tool="true" visible="true" weight="0.12708499" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6424581" visible="true" weight="0.12708499" />
+      <window_info id="Structure" order="1" sideWeight="0.3575419" side_tool="true" weight="0.12708499" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -633,7 +699,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3355605" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30066815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -664,9 +730,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.1/194434fed571c2038f2d78baad1acd0d86394c3b/rxjava-2.0.1-sources.jar!/io/reactivex/Observable.java">
@@ -708,17 +771,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Filter.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.0/ba88ed6468f28df009c013256be77ad72d313965/rxjava-2.2.0-sources.jar!/io/reactivex/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2354">
-          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+        <state relative-caret-position="1386">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -729,36 +788,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.0/ba88ed6468f28df009c013256be77ad72d313965/rxjava-2.2.0-sources.jar!/io/reactivex/functions/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.0/ba88ed6468f28df009c013256be77ad72d313965/rxjava-2.2.0-sources.jar!/io/reactivex/observables/GroupedObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.0/ba88ed6468f28df009c013256be77ad72d313965/rxjava-2.2.0-sources.jar!/io/reactivex/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="2142" column="35" selection-start-line="2142" selection-start-column="35" selection-end-line="2142" selection-end-column="35" />
+        <state relative-caret-position="521">
+          <caret line="8820" column="35" selection-start-line="8820" selection-start-column="35" selection-end-line="8820" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Combine.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/b8815e48fb45e94821287365bd9ce8623f459ac7/kotlin-stdlib-1.3.21-sources.jar!/kotlin/io/Console.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4158">
-          <caret line="189" column="26" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
-          <folding>
-            <element signature="e#17#478#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="305">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/generated/_Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="108" />
+        <state relative-caret-position="298">
+          <caret line="1573" column="9" selection-start-line="1573" selection-start-column="9" selection-end-line="1573" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Create.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="197" column="11" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="e#16#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Filter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Transform.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2404">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Combine.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="e#17#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ExtensionFunction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/HigherOrderFunction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#1#89#0" expanded="true" />
           </folding>
         </state>
       </provider>

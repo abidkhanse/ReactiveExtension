@@ -2,6 +2,7 @@ package transform
 
 import io.reactivex.Observable
 import io.reactivex.functions.Predicate
+import io.reactivex.internal.operators.flowable.BlockingFlowableNext
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import java.time.LocalDate
@@ -19,11 +20,12 @@ import java.util.concurrent.TimeUnit
 fun mapFromIntToString()
 {
     val source = Observable.just(1,2,3,4,5)
-    // val sourceString : Observable<String> = source.map { "From integer to string $it" }
 
-    val sourceString = source.map { "From integer to string $it" }
+    val sourceString = source.map { "Result: $it" }
+
     sourceString.subscribe { println(it) }
 }
+
 
 fun mapFromStringToObject()
 {
@@ -32,7 +34,7 @@ fun mapFromStringToObject()
     source.map { LocalDate.parse(it,formate) }.subscribe{ println(it)}
 }
 
-fun mapStringLength()
+fun mapStringtoInt()
 {
     val source = Observable.just("one","two","three","four","five")
     source.map { it.length }
@@ -46,7 +48,7 @@ fun maoStringToHashcode(){
         .subscribe { println(it) }
 }
 
-//*** map ends ***/
+
 
 
 
@@ -77,11 +79,12 @@ fun scanWithString(){
 
 }
 
-//*** scan ends ***/
 
 
 
-//*** reduce start ***/
+
+
+//*** reduce ***/
 
 fun reduce() {
 
@@ -94,10 +97,12 @@ fun reduceWithInit() {
 
     val source = Observable.just(1,2,3,4,5)
     val init = 100
-    source.reduce(init) {acc, next -> acc + next}
-        .subscribe{it -> println(it)}
+    source.reduce(init) {acc, next -> acc + next}.subscribe { it: Int? -> println(it) }
 
 }
+
+
+
 
 fun startWith() {
 
@@ -115,11 +120,10 @@ fun startWith() {
 
 fun defaultIfEmpty() {
 
-    val source = Observable.just("one","two","three","four","five")
+    val source = Observable.just(0,1,2,3,4,5)
 
-    source.filter{ it.startsWith("s") }
-        .defaultIfEmpty("Result is empty")
-        .subscribe{ println(it) }
+    source.filter{ it > 5 }
+        .defaultIfEmpty(5) .subscribe{ println(it) }
 
 }
 
@@ -129,9 +133,7 @@ fun switchIfEmpty(){
 
     val switchTo = Observable.just("six","seven","eight")
 
-    source.filter{ it.startsWith("s") }
-        .switchIfEmpty(switchTo)
-        .subscribe{ println(it) }
+    source.filter{ it.startsWith("s") } .switchIfEmpty(switchTo) .subscribe{ println(it) }
 
 }
 
@@ -147,16 +149,7 @@ fun sorted() {
     source.sorted(Comparator.reverseOrder())
         .subscribe{println(it)}
 
-
 }
-
-
-
-
-/* * * * * * * * * * * * * * *
-    Transform observable ends
-* * * * * * * * * * * * * * * */
-
 
 
 fun main()
