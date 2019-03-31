@@ -196,9 +196,28 @@ fun timer ()
 }
 
 
+fun bufferAndSkip() {
+
+    val source = Observable.range(1,23)
+
+    var count = 4
+    var skip = 4
+
+    source.buffer(count,skip).subscribe{ println(it)} // No Difference No Skipping
+
+    count = 2
+    skip = 4
+    source.buffer(count,skip).subscribe{ println(it)} // Skip the difference between count and Skip
+
+    count = 4
+    skip = 2
+    source.buffer(count,skip).subscribe{ println(it)} // Skip the difference between count and Skip
+
+}
+
+
 fun main()
 {
-    single()
-    maybe()
+    bufferAndSkip()
 }
 
