@@ -5,82 +5,42 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import java.util.concurrent.TimeUnit
 
-fun main() {
-    throttleWithTimeoutEmission()
-}
-
 fun throttleWithTimeoutEmission() {
 
-    val obs1Sec = Observable
-        .interval(2, TimeUnit.SECONDS)
-        .map { "$it 2 Sec Observable" }
-        .take(3)
+    val source = Observable.interval(1500, TimeUnit.MILLISECONDS)
+        .map { "$it emission" }
 
-    val obs2MSec = Observable
-        .interval(200, TimeUnit.MILLISECONDS)
-        .map { "$it 200 M Sec Observable" }
-        .take(5)
-
-    val obs5MSec = Observable
-        .interval(500, TimeUnit.MILLISECONDS)
-        .map { "$it 500 M Sec Observable" }
-        .take(3)
-
-    Observable.concat(obs1Sec,obs2MSec,obs5MSec)
-        .throttleWithTimeout(1, TimeUnit.SECONDS)
+    source.throttleWithTimeout(1000,TimeUnit.MILLISECONDS)
         .subscribe{ println(it)}
 
     Sleep(10)
 }
 
 fun throttleLastEmission() {
-
-    val obs1Sec = Observable
-        .interval(1, TimeUnit.SECONDS)
-        .map { "$it 1 Sec Observable" }
-        .take(5)
-
-    val obs2MSec = Observable
+    val source = Observable
         .interval(200, TimeUnit.MILLISECONDS)
-        .map { "$it 200 M Sec Observable" }
-        .take(5)
+        .map { "$it" }
 
-    val obs5MSec = Observable
-        .interval(500, TimeUnit.MILLISECONDS)
-        .map { "$it 500 M Sec Observable" }
-        .take(5)
-
-    Observable.concat(obs1Sec,obs2MSec,obs5MSec)
-        .throttleLast(1, TimeUnit.SECONDS)
+    source.throttleLast(1, TimeUnit.SECONDS)
         .subscribe{ println(it)}
 
     Sleep(10)
 }
 
-
 fun throttleFirstEmission() {
 
-    val obs1Sec = Observable
-        .interval(1, TimeUnit.SECONDS)
-        .map { "$it 1 Sec Observable" }
-        .take(5)
-
-    val obs2MSec = Observable
+    val source = Observable
         .interval(200, TimeUnit.MILLISECONDS)
-        .map { "$it 200 M Sec Observable" }
-        .take(5)
+        .map { "$it" }
 
-    val obs5MSec = Observable
-        .interval(500, TimeUnit.MILLISECONDS)
-        .map { "$it 500 M Sec Observable" }
-        .take(5)
-
-    Observable.concat(obs1Sec,obs2MSec,obs5MSec)
-        .throttleFirst(1, TimeUnit.SECONDS)
+    source.throttleFirst(1, TimeUnit.SECONDS)
         .subscribe{ println(it)}
 
     Sleep(10)
+}
 
+fun main() {
+    throttleFirstEmission()
 }
 
 fun Sleep(seconds: Long)

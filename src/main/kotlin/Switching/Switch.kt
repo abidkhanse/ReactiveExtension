@@ -44,14 +44,7 @@ fun switchMap02() {
 
 fun main() {
 
-    val source = Observable.just("one","two","three","four","five","six","seven")
-    val delayedSource = source.concatMap { Observable.just(it).delay (Random.nextLong(2000), TimeUnit.MILLISECONDS) }
-
-    Observable.interval(3, TimeUnit.SECONDS)
-        .switchMap {delayedSource.doOnDispose {println("Disposed")}}
-        .subscribe{println(it)}
-
-     Sleep(10)
+    switchMap02()
 }
 
 fun Sleep(seconds: Long) {
