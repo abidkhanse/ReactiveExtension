@@ -2,10 +2,11 @@ package Window
 import io.reactivex.Observable
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
+import java.util.HashSet
 import java.util.concurrent.TimeUnit
 
 fun main() {
-    boundaryBasedWindow()
+    windowWithDisplay()
 }
 
 fun boundaryBasedWindow() {
@@ -17,7 +18,7 @@ fun boundaryBasedWindow() {
         .flatMapSingle { obs -> obs.reduce(""){ x, y -> "$x $y" } }
         .subscribe{ println(it)}
 
-    Sleep(10)
+    Sleep(5)
 }
 
 
@@ -41,7 +42,23 @@ fun windowWithSkip() {
     obsSource
         .flatMapSingle { obs -> obs.reduce("") { x, y -> "$x $y" } }
         .subscribe { println(it) }
+
 }
+
+fun windowWithDisplay() {
+
+    val source = Observable.interval(1, TimeUnit.SECONDS)
+    val obsSource = source.window(4)
+    obsSource.subscribe{ display(it)}
+    Sleep(20)
+}
+
+fun display(source : Observable<Long>){
+    println("\nDisplay observable")
+   source.subscribe { print(it) }
+}
+
+
 
 fun window() {
 
@@ -51,7 +68,6 @@ fun window() {
     obsSource.
         flatMapSingle{obs -> obs.reduce ("") { x, y ->  "$x  $y" } }.
         subscribe{ println(it)}
-
 }
 
 fun Sleep(seconds: Long)

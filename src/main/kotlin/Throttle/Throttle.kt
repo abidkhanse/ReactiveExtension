@@ -31,7 +31,6 @@ fun throttleWithTimeoutEmission() {
         .subscribe{ println(it)}
 
     Sleep(10)
-
 }
 
 fun throttleLastEmission() {
