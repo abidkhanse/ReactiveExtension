@@ -5,7 +5,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import java.util.concurrent.TimeUnit
 
-fun produceAnErrorWithObserverInterface(){
+fun ErrorHandlingWithObserverInterface(){
 
     val source = Observable.interval(1, TimeUnit.SECONDS)
     source.subscribe(
@@ -33,7 +33,7 @@ fun onErrorReturn(){
             else
                 -11111
         }
-        .subscribe{println(it)}
+        .subscribe { println(it) }
 
     Sleep(10)
 }
@@ -51,6 +51,7 @@ fun onErrorReturnItem(){
 
 
 fun onErrorResumeNext(){
+
     val source = Observable.interval(1, TimeUnit.SECONDS)
     source
         .map { 100 / (it - 2) }
@@ -102,6 +103,7 @@ fun onExceptionResumeNext(){
 }
 
 fun onExceptionResumeNext_Exception(){
+
     val source = Observable.interval(1, TimeUnit.SECONDS)
     source
         .map {
@@ -117,6 +119,7 @@ fun onExceptionResumeNext_Exception(){
 }
 
 fun onExceptionResumeNext_Error(){
+
     val source = Observable.interval(1, TimeUnit.SECONDS)
     source
         .map {
@@ -132,8 +135,10 @@ fun onExceptionResumeNext_Error(){
 }
 
 
+
 fun main() {
-    onExceptionResumeNext_Exception()
+
+    onExceptionResumeNext_Error()
 }
 
 fun Sleep(seconds: Long) {
